@@ -12,7 +12,7 @@ body { font-family: sans-serif; }
 <div id="table"></div>
 
 <script>
-fetch("https://www.tiira.fi/index.php?toiminto=29&alue=3&limit=50")
+fetch("https://www.tiira.fi/index.php?toiminto=29&laji=&alue=3&kunta=&kerutoim=1&order1=pvm1&suunta1=desc&order2=syst_ord&suunta2=asc&limit=50&tilat=kaikki&yksmaara=1&paivamaara=1&paivamaara_a=&paivamaara_l=&aikaalue1=&aikaalue2=&haku=Hae")
   .then(r => r.text())
   .then(html => {
       const doc = new DOMParser().parseFromString(html, "text/html");
